@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharshan's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #89f7fe, #66a6ff);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            margin: 0;
+            color: #fff;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #6a11cb, #2575fc);
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #fff;
+            padding: 1rem 0;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            margin: 0 1rem;
+            padding: 0.7rem 1.5rem;
+            color: #2575fc;
+            font-weight: bold;
+            border-radius: 50px;
+            background: #f4f4f4;
+            transition: all 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        /* About Section */
+        section#about {
+            text-align: center;
+            padding: 3rem 1rem;
+            background: #f9f9f9;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section#about img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-bottom: 1rem;
+        }
+
+        section#about h2 {
+            color: #2575fc;
+            margin-bottom: 1rem;
+        }
+
+        /* Projects Section */
+        section#projects {
+            padding: 3rem 1rem;
+            background: linear-gradient(120deg, #f6d365, #fda085);
+            color: #fff;
+        }
+
+        section#projects h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .project {
+            background: #fff;
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Skills Section */
+        section#skills {
+            padding: 3rem 1rem;
+            background: #f4f4f4;
+            text-align: center;
+        }
+
+        section#skills h2 {
+            margin-bottom: 1rem;
+            color: #2575fc;
+        }
+
+        section#skills p {
+            margin-bottom: 2rem;
+            color: #666;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .skill {
+            background: #fff;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .skill:hover {
+            background: #2575fc;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        /* Contact Section */
+        section#contact {
+            padding: 3rem 1rem;
+            background: linear-gradient(120deg, #66a6ff, #89f7fe);
+            text-align: center;
+            color: #fff;
+        }
+
+        section#contact a {
+            color: #ffd700;
+            font-weight: bold;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Aditya Portfolio</h1>
+        <p>Crafting solutions with creativity, precision, and passion.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- About Section -->
+    <section id="about">
+        <img src="photo.jpg" alt="Dharshan">
+        <h2>About Me</h2>
+        <p>Hi, I'm Aditya, a passionate web developer with a knack for crafting visually stunning and user-friendly websites. Skilled in HTML, CSS, JavaScript, and backend technologies like Java and JDBC, I love turning creative ideas into impactful digital experiences. I'm always exploring the latest trends in web development to build responsive, dynamic, and engaging web solutions!</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects-container">
+            <div class="project">
+                <h3> Responsive Portfolio Website</h3>
+                <p>Description: A sleek, modern, and responsive personal portfolio website showcasing projects, skills, and contact information. Built using HTML, CSS, and JavaScript, this site adapts seamlessly across devices, offering an engaging experience.</p>
+            </div>
+            <div class="project">
+                <h3>Event Management System</h3>
+                <p>A web application designed for users to create, manage, and RSVP to events. The frontend is built using HTML, CSS, and JavaScript, while the backend leverages Java and JDBC for database connectivity and data storage.</p>
+            </div>
+            <div class="project">
+                <h3>Blog Platform with Commenting System</h3>
+                <p>A full-stack blog platform where users can post, edit, and comment on blogs. It incorporates a responsive UI built with HTML, CSS, and JavaScript, while Java and JDBC manage the backend and database interactions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Web-Based Skills</h2>
+        <p>Here are some of the key technologies I use to craft engaging and dynamic web experiences:</p>
+        <div class="skills-container">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">MongoDB</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: <a href="mailto:aditya.vn2023cse@sece.ac.in">aditya.vn2023lcse@sece.ac.in</a></p>
+        <p>Phone: 6381178409</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/aditya-aditya-508013346/" target="_blank">linkedin.com/in/Aditya</a></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Dharshan. All rights reserved.</p>
+    </footer>
+</body>
+</html>
